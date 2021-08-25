@@ -19,11 +19,17 @@ class MainActivity : AppCompatActivity() {
 
 
         val movies = ArrayList<Movie>()
-        movies.add(Movie("Titanic"))
-        movies.add(Movie("Naruto"))
-        movies.add(Movie("Naruto Shippuden"))
+        movies.add(Movie("https://upload.wikimedia.org/wikipedia/pt/1/1a/Spider-Man_2.jpg"))
+        movies.add(Movie("https://upload.wikimedia.org/wikipedia/pt/1/1a/Spider-Man_2.jpg"))
+        movies.add(Movie("https://upload.wikimedia.org/wikipedia/pt/1/1a/Spider-Man_2.jpg"))
+        movies.add(Movie("https://upload.wikimedia.org/wikipedia/pt/1/1a/Spider-Man_2.jpg"))
+        movies.add(Movie("https://upload.wikimedia.org/wikipedia/pt/1/1a/Spider-Man_2.jpg"))
+        movies.add(Movie("https://upload.wikimedia.org/wikipedia/pt/1/1a/Spider-Man_2.jpg"))
+
+        //movies.add(Movie(""))
         binding?.carrousel?.apply {
             setItems(movies)
+            setWindowManager(windowManager)
             createAdapter()
             showCarrousel()
         }

@@ -1,3 +1,3 @@
 package com.demo.carrouselview
 
-data class Movie(val name: String)
+data class Movie(val imageMovie: String)
